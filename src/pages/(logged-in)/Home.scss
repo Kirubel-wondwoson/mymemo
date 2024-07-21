@@ -1,0 +1,32 @@
+$btnandtext: #FF8C00;
+.Home{
+  margin-left: 100px;
+  margin-right: 100px;
+
+  h1{
+    font-size: 60px;
+    margin-top: 100px;
+    margin-bottom: 0;
+    transition: color 0.2s;
+  }
+  h1:hover{
+    color: $btnandtext;
+  }
+  p{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: white;
+  }
+  .btn-myaccount, .btn-mytelegram{
+    padding:10px 40px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .btn-myaccount:hover, .btn-mytelegram:hover{
+    background-color: $btnandtext;
+  }
+}
