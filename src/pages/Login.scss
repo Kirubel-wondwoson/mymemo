@@ -1,0 +1,33 @@
+
+$background: #222222;
+$btnandtext: #4caf50;
+body{
+  text-align: center;
+  background-color: $background;
+  color: $btnandtext;
+}
+form {
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 150px 450px;
+  padding-top: 50px;
+  height: 350px;
+  color: $btnandtext;
+}
+input {
+  width: 250px;
+  padding: 10px 0;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-size: medium;
+  border: solid 1px;
+  border-radius: 10px;
+}
+.btn {
+  margin-top: 40px;
+  width: 270px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
