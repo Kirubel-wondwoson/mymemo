@@ -1,6 +1,9 @@
-// .App {
-//   text-align: center;
-// }
-// body{
-//   background-color: #A9A9A9
-// }  
+$background: #222222;
+$btnandtext: #FF8C00;
+.App {
+  text-align: center;
+  color: white;
+}
+body{
+  background-color: $background;
+}

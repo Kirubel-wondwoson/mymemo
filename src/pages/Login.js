@@ -4,29 +4,32 @@ const Login = () => {
   const [name, setName] = useState('')
   const [password, setPassword] = useState('')
   return (
-    <form>
-      <h1>Login</h1>
-      <input
-        placeholder="Username"
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}>
-      </input> 
+    <div className="Login">
+      <form>
+        <h1>Login</h1>
+        <input
+          placeholder="Username"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}>
+        </input>
 
-      <br />
+        <br />
 
-      <input
-        placeholder="Password"
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}>
-      </input>
+        <input
+          placeholder="Password"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}>
+        </input>
 
-      <br />
-      <button className="btn">
-        Login
-      </button>
-    </form >
+        <br />
+        <button className="btn">
+          Login
+        </button>
+      </form >
+    </div>
+
   )
 }
 export default Login

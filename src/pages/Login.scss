@@ -1,15 +1,9 @@
-
-$background: #222222;
-$btnandtext: #4caf50;
-body{
-  text-align: center;
-  background-color: $background;
-  color: $btnandtext;
-}
+$btnandtext: #ff7b00;
+//FF8C00
 form {
   border: solid 1px;
   border-radius: 10px;
-  margin: 150px 450px;
+  margin: 70px 450px;
   padding-top: 50px;
   height: 350px;
   color: $btnandtext;
@@ -19,7 +13,6 @@ input {
   padding: 10px 0;
   padding-left: 10px;
   margin-bottom: 20px;
-  font-size: medium;
   border: solid 1px;
   border-radius: 10px;
 }
@@ -30,4 +23,8 @@ input {
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btn:hover{
+  background-color: $btnandtext;
 }

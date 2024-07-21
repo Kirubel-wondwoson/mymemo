@@ -2,10 +2,12 @@ import './App.scss';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// import Layout from './pages/Layout'
+import Layout from './pages/Layout'
 import Login from './pages/Login'
-import Home from './pages/(logged-in)/Home'
 import DashBoard from './pages/(logged-in)/DashBoard'
+import Home from './pages/(logged-in)/Home'
+import About from './pages/About'
+import Contact from './pages/Contact';
 
 
 // import Blogs from './pages/Blogs'
@@ -131,6 +133,17 @@ import DashBoard from './pages/(logged-in)/DashBoard'
 function App() {
   return (
     <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="DashBoard" element={<DashBoard />} />
+              <Route path="Login" element={<Login />} />
+              <Route path="About" element={<About />}/>
+              <Route path="Contact" element={<Contact />}/>
+            </Route>
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }
